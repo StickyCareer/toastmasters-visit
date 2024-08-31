@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from './styles.module.scss'
 
-const EventsPage = () => {
+const NewEventPage = () => {
   return (
-    <div>EventsPage</div>
+    <div>NewEventPage</div>
   )
 }
 
-export default EventsPage
+export default NewEventPage
