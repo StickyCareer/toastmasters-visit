@@ -19,9 +19,10 @@ export default function RootLayout({
   connectToMongoDB();
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
-
-<SiteFooter/>
+      <body className={inter.className}>
+        {children}
+        <SiteFooter/>
+      </body>
     </html>
   );
 }
