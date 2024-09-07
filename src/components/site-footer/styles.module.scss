@@ -1,40 +1,53 @@
 
-.container {
-  border-radius: 8px;
+.container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding:20px;
   background-color: white;
   color: #757575;
-  font: montserrat;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 
-#Disclaimer{
-  display:block;
-  margin:50%;
-  border: 1px solid #000;
+.disclaimer{
   font-weight: 400;
-  font-size: 14px;
   font-style: italic;
   text-align: center;
-  line-height: 17.07px;
+  line-height: 17px;
+  max-width: 850px;
+  margin-bottom: 20px;
   }
 
-#Links{
-  display: flexbox;
+.links{
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  max-width:1000px;
+  align-items:center;
   font-size: 16px;
   line-height: 19.5px;
-  
-  a{
-    justify-content: flex-start;
-    margin-left:auto;
+
+.leftLinks{
+    display: flex;
+}
+
+.leftLinks a{
     font-weight: 500;
+    margin-right: 15px;
   }
 
-  div{
-    justify-content: flex-end;
-    margin-right:auto;
+.leftLinks a:hover {
+  text-decoration:underline;
+}
+
+.rightText{
     font-weight: 400;
+    justify-content:flex-end
   }
 
-  span{
+ .rightText span{
     font-weight: 600;
   }
 }
