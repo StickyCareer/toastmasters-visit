@@ -20,9 +20,10 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ status: "OK", data: cachedData });
   }
 
+  const mapboxEndpoint = process.env.NEXT_PUBLIC_MAPBOX_ENDPOINT;
   const mapboxToken = process.env.MAPBOX_TOKEN;
   const encodedQuery = encodeURIComponent(q);
-  const mapboxUrl = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodedQuery}.json?access_token=${mapboxToken}&country=my`;
+  const mapboxUrl = `${mapboxEndpoint}/${encodedQuery}.json?access_token=${mapboxToken}&country=my`;
 
   try {
     const mapboxResponse = await fetch(mapboxUrl);
