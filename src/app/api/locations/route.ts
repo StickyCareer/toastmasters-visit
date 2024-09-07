@@ -1,13 +1,12 @@
 import NodeCache from "node-cache";
 import { formatMapboxAddress } from "@/utils/location-helper";
-import { NextApiRequest } from "next";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import fetch from "node-fetch";
 
 // Initialize node-cache with a standard TTL (e.g., 1 hour)
 const cache = new NodeCache({ stdTTL: 3600 });
 
-export async function GET(request: NextApiRequest) {
+export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url || "");
   const q = searchParams.get("q") || "";
 
