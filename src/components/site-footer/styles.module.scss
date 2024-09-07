@@ -1,5 +1,40 @@
 
 .container {
   border-radius: 8px;
-  background-color: yellow;
+  background-color: white;
+  color: #757575;
+  font: montserrat;
+}
+
+#Disclaimer{
+  display:block;
+  margin:50%;
+  border: 1px solid #000;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  line-height: 17.07px;
+  }
+
+#Links{
+  display: flexbox;
+  font-size: 16px;
+  line-height: 19.5px;
+  
+  a{
+    justify-content: flex-start;
+    margin-left:auto;
+    font-weight: 500;
+  }
+
+  div{
+    justify-content: flex-end;
+    margin-right:auto;
+    font-weight: 400;
+  }
+
+  span{
+    font-weight: 600;
+  }
 }
