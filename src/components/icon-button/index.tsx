@@ -3,8 +3,10 @@ import styles from './styles.module.scss'
 
 const IconButton = () => {
   return (
-    <div className={styles.container}>IconButton</div>
+    <div className={styles.container}>
+      <img src="" alt="" />
+    </div>
   )
 }
 
-export default IconButton
+export default IconButton;
