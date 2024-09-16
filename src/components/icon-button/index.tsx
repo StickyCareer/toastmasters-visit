@@ -1,10 +1,14 @@
 import React from 'react';
 import styles from './styles.module.scss'
 
-const IconButton = () => {
+interface AppButtonProps {
+  icon: any
+}
+
+const IconButton = ({icon}: AppButtonProps) => {
   return (
     <div className={styles.container}>
-      <img src="" alt="" />
+      {icon}
     </div>
   )
 }
