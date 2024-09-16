@@ -1,11 +1,14 @@
 import React from 'react';
 import styles from './styles.module.scss'
-import IconFavorite from '/public/favorite_border.svg';
 
-const AppButton = () => {
+interface AppButtonProps {
+  icon: any
+}
+
+const AppButton = ({icon}: AppButtonProps) => {
   return (
     <div className={styles.container}>
-      <IconFavorite />
+      {icon}
       AppButton
     </div>
   )
