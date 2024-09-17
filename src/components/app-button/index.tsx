@@ -2,15 +2,16 @@ import React from 'react';
 import styles from './styles.module.scss'
 
 interface AppButtonProps {
-  icon: any
+  icon: any,
+  onclick: Function
 }
 
-const AppButton = ({icon}: AppButtonProps) => {
+const AppButton = ({icon, onclick}: AppButtonProps) => {
   return (
-    <div className={styles.container}>
+    <button className={styles.container} onClick={() =>  onclick()}>
       {icon}
       AppButton
-    </div>
+    </button>
   )
 }
 
