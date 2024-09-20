@@ -1,0 +1,30 @@
+@import "@styles/variables";
+
+.container {
+  .subcont {
+    display: flex;
+    flex-direction: column;
+    border: dashed 1px $primary;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 5vh 5vw;
+
+    &.file_entered {
+      border: dashed 2px black;
+    }
+
+    .label {
+      color: $primary;
+      font-size: 18px;
+      font-weight: 500;
+      margin: 1rem;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
+    }
+  }
+}

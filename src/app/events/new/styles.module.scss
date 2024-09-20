@@ -1,0 +1,45 @@
+@import "@styles/variables";
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .content {
+    min-height: 50vh;
+
+    .step {
+      animation: 0.3s ease-in-out forwards;
+
+      &.left {
+        animation-name: slideInFromLeft;
+      }
+
+      &.right {
+        animation-name: slideInFromRight;
+      }
+    }
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
